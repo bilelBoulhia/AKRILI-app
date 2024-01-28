@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "450904912381",
+    "project_id": "akrili-3b2d1",
+    "storage_bucket": "akrili-3b2d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450904912381:android:1a317c6f833963cf26e994",
+        "android_client_info": {
+          "package_name": "com.example.akrili"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvuKQKdyBmyllvBWb1j_o-cyZRIamYWhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

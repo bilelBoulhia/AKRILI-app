@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#14171B"
+    tools:context=".loginpage">
+
+
+    <Button
+        android:id="@+id/signInButton"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="39dp"
+        android:layout_height="0dp"
+
+
+        android:layout_marginBottom="61dp"
+        android:background="@drawable/google_256x256__1_"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="TextContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registerbtn"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#00459DE4"
+        android:clickable="true"
+        android:fontFamily="@font/poppinsextrabolitalic"
+        android:text="register"
+        android:textColor="@color/secondary"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="@font/poppinsextrabolitalic"
+        android:text="Dont have an account ?"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/registerbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/poppinsextrabolitalic"
+        android:text="or"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/signInButton"
+        app:layout_constraintStart_toStartOf="@+id/signInButton"
+        app:layout_constraintTop_toBottomOf="@+id/registerbtn" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/poppinsextrabolitalic"
+        android:text="Email"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/emailtext"
+        app:layout_constraintStart_toStartOf="@+id/emailtext" />
+
+    <EditText
+        android:id="@+id/emailtext"
+        android:paddingLeft="7dp"
+        android:layout_width="245dp"
+        android:layout_height="0dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/bordershapewhite"
+
+        app:layout_constraintBottom_toTopOf="@+id/passtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourImageView"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="@font/poppinsextrabolitalic"
+        android:text="password"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/passtext"
+        app:layout_constraintStart_toStartOf="@+id/passtext" />
+
+    <EditText
+        android:id="@+id/passtext"
+        android:layout_width="243dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="7dp"
+        android:background="@drawable/bordershapewhite"
+
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/loginbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailtext"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/yourImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="54dp"
+        android:background="@drawable/login"
+        android:elevation="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailtext"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:background="#00459DE4"
+        android:clickable="true"
+        android:fontFamily="@font/poppinsextrabolitalic"
+        android:text="LOGIN"
+        android:textColor="@color/secondary"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/passtext"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
